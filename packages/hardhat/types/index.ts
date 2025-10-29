@@ -24,3 +24,5 @@ export type { IInputVerifier } from "./@fhevm/solidity/lib/Impl.sol/IInputVerifi
 export { IInputVerifier__factory } from "./factories/@fhevm/solidity/lib/Impl.sol/IInputVerifier__factory";
 export type { FHECounter } from "./contracts/FHECounter";
 export { FHECounter__factory } from "./factories/contracts/FHECounter__factory";
+export type { FHESharinganDao } from "./contracts/FHESharinganDao";
+export { FHESharinganDao__factory } from "./factories/contracts/FHESharinganDao__factory";
