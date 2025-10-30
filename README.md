@@ -1,19 +1,18 @@
-# FHEVM React Template
+# 👁️ FHESharinganDao — FHEVM Privacy Voting dApp
 
-A minimal React frontend template for building FHEVM-enabled decentralized applications (dApps). This template provides a simple development interface for interacting with FHEVM smart contracts, specifically the `FHECounter.sol` contract.
+A minimal **React + Solidity** for building **privacy-preserving decentralized applications** powered by **Fully Homomorphic Encryption (FHEVM)**.
 
-## 🚀 What is FHEVM?
+This dapp implements a simple **Uchiha Eyes Voting**, where users can **vote for their favorite Sharingan** — *without ever revealing their choice on-chain*.
 
-FHEVM (Fully Homomorphic Encryption Virtual Machine) enables computation on encrypted data directly on Ethereum. This template demonstrates how to build dApps that can perform computations while keeping data private.
+---
 
-## ✨ Features
+**Network:** Sepolia Testnet (Zama FHEVM compatible)
 
-- **🔐 FHEVM Integration**: Built-in support for fully homomorphic encryption
-- **⚛️ React + Next.js**: Modern, performant frontend framework
-- **🎨 Tailwind CSS**: Utility-first styling for rapid UI development
-- **🔗 RainbowKit**: Seamless wallet connection and management
-- **🌐 Multi-Network Support**: Works on both Sepolia testnet and local Hardhat node
-- **📦 Monorepo Structure**: Organized packages for SDK, contracts, and frontend
+### 🧩 Key Features
+- 🕶️ **Encrypted Voting** — users’ choices remain private thanks to FHE.
+- 🔁 **Updatable Votes** — users can update their encrypted vote anytime.
+- 🔒 **Per-User Encryption** — only the user and contract can decrypt their vote.
+- 🧠 **ZK Proof Verification** — ensures validity of encrypted submissions.
 
 ## 📋 Prerequinextjss
 
@@ -124,7 +123,7 @@ For more details, see the [MetaMask development guide](https://docs.metamask.io/
 This template uses a monorepo structure with three main packages:
 
 ```
-fhevm-react-template/
+sharingan-dao/
 ├── packages/
 │   ├── fhevm-hardhat-template/    # Smart contracts & deployment
 │   ├── fhevm-sdk/                 # FHEVM SDK package
@@ -134,8 +133,8 @@ fhevm-react-template/
 
 ### Key Components
 
-#### 🔗 FHEVM Integration (`packages/nextjs/hooks/fhecounter-example/`)
-- **`useFHECounterWagmi.tsx`**: Example hook demonstrating FHEVM contract interaction
+#### 🔗 FHEVM Integration (`packages/nextjs/hooks`)
+- **`useFHESharinganWagmi.tsx`**: Example hook demonstrating FHEVM contract interaction
 - Essential hooks for FHEVM-enabled smart contract communication
 - Easily copyable to any FHEVM + React project
 
